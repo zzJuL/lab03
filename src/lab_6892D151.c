@@ -3,6 +3,23 @@
 long calculate_factorial(int number )
 {
     // TODO: write your code here
+    if (number < 0 || number > 20) {
+        return -1; 
+    }
+    
+    
+    if (number == 0) {
+        return 1;
+    }
+    
+    long result = 1;
+    
+    
+    for (int i = 1; i <= number; i++) {
+        result *= i;
+    }
+    
+    return result;
 }
 
 // DO NOT change the code below
